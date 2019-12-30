@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Eye training</title>
+	<style type="text/css">
+		canvas{
+			background: #eee;
+			margin:auto;
+		}
+		.first-col{
+			text-align: right;
+		}
+		.wrap{
+			width:800px;
+			margin:auto;
+		}
+	</style>
+</head>
+<body>
+	<main class="wrap">
+	<div class="info">
+		<table>
+			<tr>
+				<td class='first-col'>Average reaction time:</td>
+				<td>
+					<div id="averageReactionTime"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class='first-col'>Time spent:</td>
+				<td>
+					<div id="countdown"></div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<canvas id='viewport' width="800" height="600"></canvas>
+	</main>
+	<script type="text/javascript" src="/app.js"></script>
+</body>
+</html>
