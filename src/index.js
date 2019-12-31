@@ -7,7 +7,7 @@ import {
 	const $viewport = $("#viewport").get(0);
 	let ctx = $viewport.getContext('2d');
 	let number = utils.getRandomInt(9) + "";
-	let fontSize = 24; //px
+	let fontSize = 48; //px
 	let reactionTimes = [];
 	let reactionStart;
 	let reactionEnd;

@@ -24,7 +24,15 @@ module.exports = {
                     presets: ['@babel/preset-env']
                 }
             }
-        }]
+        }. {
+            test: /\.html$/,
+            use: [{
+                loader: 'html-loader',
+                options: {
+                    minimize: true,
+                },
+            }, ],
+        }, ]
     },
     output: {
         filename: 'app.js',
